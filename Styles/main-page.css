@@ -8,9 +8,10 @@ html {
 }
 
 
-body, h1, h2, p, ul {
+body, h1, h2, ul {
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -53,8 +54,8 @@ section {
 .registration-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #9BA4B4;
-  color: #14274E;
+  background-color: black;
+  color: rgb(82, 255, 47);
   text-decoration: none;
   border-radius: 5px;
   border: gray solid 1px;
@@ -62,13 +63,15 @@ section {
   color 0.5s,
   box-shadow 0.6s;
   font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .registration-btn:hover {
-  background-color: #2C3333;
-  color: white;
+  background-color: #3d4141;
+  color: rgb(82, 255, 47);
   box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.37);
   border: white solid 1.5px;
+  
 }
 
 /* Style footer */
