@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 720px;
+}
+
 
 
 
@@ -12,10 +16,15 @@ header {
   background-color: #222831;
   padding: 20px;
   text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header h1 {
   margin-bottom: 10px;
+  margin-top: 10px;
   color: #F1F6F9;
 }
 
@@ -58,6 +67,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px 0;
+  justify-content: center;
 }
 
 .input-box {
@@ -69,7 +79,7 @@ h2 {
 
 .input-box label {
   width: 95%;
-  color: #F1F6F9;
+  color: rgb(235, 245, 208);
   font-weight: bold;
   margin: 5px 0;
 }
@@ -81,4 +91,89 @@ h2 {
   border-radius: 7px;
   border: white solid 1px;
   outline: none;
+}
+
+
+
+.submit-btn input {
+  height: 40px;
+  width: 90px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fbfeff;
+  background-color: rgb(53, 165, 31);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.5s,
+  color 0.5s,
+  box-shadow 0.6s;
+}
+
+.submit-btn input:hover {
+  background-color: #3d4141;
+  color: rgb(82, 255, 47);
+  box-shadow: 2px 5px 20px rgba(255, 255, 255, 0.26);
+  border: white solid 1.5px;
+  
+}
+
+
+
+.t-p {
+  color: cadetblue;
+  transition: color 0.5s;
+}
+
+.t-p:hover {
+  color: rgb(158, 43, 43);
+}
+
+.alert {
+  color: burlywood;
+  cursor: default;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding-bottom: 3.6px;
+}
+
+
+p {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+
+span {
+  color: rgb(82, 255, 47);
+}
+
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .content .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+
+}
+
+.container .content {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
